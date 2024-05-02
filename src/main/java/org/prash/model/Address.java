@@ -4,7 +4,6 @@ package org.prash.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import net.bytebuddy.implementation.bind.annotation.Default;
 
 /**
  * Project: PojoFactory

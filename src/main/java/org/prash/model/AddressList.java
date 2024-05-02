@@ -2,9 +2,7 @@ package org.prash.model;
 
 import com.fasterxml.jackson.annotation.*;
 
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Project: PojoFactory
