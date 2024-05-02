@@ -89,6 +89,7 @@ public class PojoFactory {
                 df.getFirstName(),
                 df.getLastName(),
                 df.getBirthDate(),
+                df.getNumberText(10),
                 getAddress()
         );
     }

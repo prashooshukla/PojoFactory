@@ -23,15 +23,15 @@ public class Employee extends Person {
     }
 
     public Employee(String employeeId, String department, double salary, Person person) {
-        super(person.getFirstName(), person.getLastName(), person.getDob(), person.getAddress());
+        super(person.getFirstName(), person.getLastName(), person.getDob(), person.getMobile(), person.getAddress());
         this.employeeId = employeeId;
         this.department = department;
         this.salary = salary;
         this.active = true;
     }
 
-    public Employee(String firstName, String lastName, String dob, Address address, String employeeId, String department, double salary) {
-        super(firstName, lastName, dob, address);
+    public Employee(String firstName, String lastName, String dob, String mobile, Address address, String employeeId, String department, double salary) {
+        super(firstName, lastName, dob, mobile, address);
         this.employeeId = employeeId;
         this.department = department;
         this.salary = salary;

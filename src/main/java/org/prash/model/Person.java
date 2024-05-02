@@ -15,6 +15,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private LocalDate dob; // Date of birth
+    private String mobile;
     private Address address;
 
     private static final String dateFormat = "dd-MM-yy";
@@ -22,17 +23,19 @@ public class Person {
     public Person() {
     }
 
-    public Person(String firstName, String lastName, String dob, Address address) {
+    public Person(String firstName, String lastName, String dob, String mobile, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.mobile = mobile;
         this.address = address;
         setDob(dob);
     }
 
-    public Person(String firstName, String lastName, LocalDate dob, Address address) {
+    public Person(String firstName, String lastName, LocalDate dob, String mobile, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
+        this.mobile = mobile;
         this.address = address;
     }
 
@@ -97,12 +100,21 @@ public class Person {
         return firstName + " " + lastName;
     }
 
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", dob=" + dob +
+                ", mobile='" + mobile + '\'' +
                 ", address=" + address +
                 '}';
     }
